@@ -26,7 +26,7 @@ const App = () => {
   };
 
   const handleRubInput = (event) => {
-    const value = parseFloat(event.target.value) || 0;
+    const value = parseFloat(event.target.value) || null;
     setRubValue(value);
     setLztValue((value * conversionRate).toFixed(2));
   };
