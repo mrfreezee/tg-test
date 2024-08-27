@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { useTelegram } from './hooks/useTelegram';
-window.Telegram.WebApp
+
 
 
 const App = () => {
