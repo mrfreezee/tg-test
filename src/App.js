@@ -136,7 +136,7 @@ const App = () => {
             <label className="swap-input-label" htmlFor="rub-input">Я отдам:</label>
             <div className="swap-input-wrapper">
               <input
-                type="tel"
+                type="text"
                 inputMode='numeric'
                 id="rub-input"
                 className="swap-input"
@@ -154,7 +154,7 @@ const App = () => {
             <label className="swap-input-label" htmlFor="lzt-input">Я получу:</label>
             <div className="swap-input-wrapper">
               <input
-                type="tel"
+                type="text"
                 inputMode='numeric'
                 id="lzt-input"
                 className="swap-input"
