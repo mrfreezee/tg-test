@@ -279,22 +279,18 @@ cursor: not-allowed;
 transition: background-color 0.3s, color 0.3s;
 }
 .swap-button.active{
-  background-color: rgb(222, 222, 222);
-  /* background-color: var(--button-color); */
-
-  color: #3e3e3e;
+  background-color: rgb(214,214,214); /* Яркий цвет кнопки, когда поле не пустое */
+  color: rgb(39,39,39); /* Цвет текста кнопки в активном состоянии */
 }
 
-.swap-button.enabled {
-background-color: rgb(214,214,214); /* Яркий цвет кнопки, когда поле не пустое */
-color: rgb(39,39,39); /* Цвет текста кнопки в активном состоянии */
-cursor: pointer;
+.swap-button.active:hover{
+  background-color: rgb(87, 87, 87); /* Цвет кнопки при наведении */
+  color: rgb(193, 193, 193); /* Цвет текста при наведении */
 }
 
-.swap-button:hover.enabled {
-background-color: rgb(230,230,230); /* Цвет кнопки при наведении */
-color: rgb(0,0,0); /* Цвет текста при наведении */
-}
+
+
+
 
 
 /* Убираем стрелки в числовых полях на всех браузерах */
