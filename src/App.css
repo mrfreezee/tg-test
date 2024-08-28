@@ -278,6 +278,12 @@ color: var(--text-color);
 cursor: not-allowed;
 transition: background-color 0.3s, color 0.3s;
 }
+.swap-button.active{
+  background-color: rgb(222, 222, 222);
+  /* background-color: var(--button-color); */
+
+  color: #3e3e3e;
+}
 
 .swap-button.enabled {
 background-color: rgb(214,214,214); /* Яркий цвет кнопки, когда поле не пустое */

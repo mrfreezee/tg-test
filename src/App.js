@@ -26,13 +26,13 @@ const App = () => {
   };
 
   const handleRubInput = (event) => {
-    const value = parseFloat(event.target.value) || null;
+    const value = parseFloat(event.target.value) || '';
     setRubValue(value);
     setLztValue((value * conversionRate).toFixed(2));
   };
 
   const handleLztInput = (event) => {
-    const value = parseFloat(event.target.value) || 0;
+    const value = parseFloat(event.target.value) || '';
     setLztValue(value);
     setRubValue((value / conversionRate).toFixed(2));
   };
@@ -170,7 +170,7 @@ const App = () => {
 
           <div className="swap-result" id="swap-result">Вы получите на баланс: {lztValue} LZT RUB</div>
 
-          <button className="swap-button" id="confirm-button" onClick={confirmSwap} disabled={!updateButtonState()}>
+          <button className={`swap-button ${updateButtonState() ? 'active' : ''}`} id="confirm-button" onClick={confirmSwap} disabled={!updateButtonState()}>
             Подтвердить
           </button>
         </div>
