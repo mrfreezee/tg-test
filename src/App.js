@@ -81,6 +81,8 @@ const App = () => {
 
   const closeConfirmation = () => {
     setConfirmationModalVisible(false);
+    setLztValue('')
+    setRubValue('')
   };
 
   return (
